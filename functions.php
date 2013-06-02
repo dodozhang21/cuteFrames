@@ -76,6 +76,11 @@ function cuteFrames_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'cuteFrames' ),
 	) );
+
+	/**
+	 * Language
+	 */
+	load_theme_textdomain('cuteFrames', get_template_directory() . '/languages');
 }
 endif; // cuteFrames_setup
 
