@@ -4,10 +4,10 @@ Theme URI: http://pure-essence.net/2013/03/29/cute-frames/
 Author: Ying Zhang
 Author URI: http://regretless.com
 Description: Created by <a href="http://pure-essence.net/">pure-essence.net</a>. Cute Frames is a responsive pin board styled theme with unique frames for post formats: aside, image, link, quote and featured images. It supports sidebar, footer widgets, Jetpack infinite scroll.
-Version: 1.0.7
+Version: 2.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: fixed-width, three-columns, threaded-comments, sticky-post, microformats, right-sidebar, blue, brown, green, orange, pink, purple, red, white, yellow, light, custom-menu, editor-style, full-width-template, blavatar, post-formats, featured-images, translation-ready
+Tags: fixed-width, three-columns, threaded-comments, sticky-post, microformats, right-sidebar, custom-menu, editor-style, full-width-template, post-formats, featured-images, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1715,4 +1715,35 @@ table#wp-calendar td#next {
 		background: none;;
 	}
 
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
 }
