@@ -17,14 +17,14 @@ get_header();
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
 						<h1 class="entry-title"><?php the_title(); ?></h1>
-						<?php edit_post_link( __( 'Edit', 'cuteFrames' ), '<span class="edit-link">', '</span>' ); ?>
+						<?php edit_post_link( __( 'Edit', 'cute-frames' ), '<span class="edit-link">', '</span>' ); ?>
 						<div class="entry-meta">
 							<?php cuteFrames_posted_on(); ?>
 						</div><!-- .entry-meta -->
 
 						<nav id="image-navigation">
-							<span class="previous-image"><?php previous_image_link( false, __( '&larr; Previous' , 'cuteFrames' ) ); ?></span>
-							<span class="next-image"><?php next_image_link( false, __( 'Next &rarr;' , 'cuteFrames' ) ); ?></span>
+							<span class="previous-image"><?php previous_image_link( false, __( '&larr; Previous' , 'cute-frames' ) ); ?></span>
+							<span class="next-image"><?php next_image_link( false, __( 'Next &rarr;' , 'cute-frames' ) ); ?></span>
 						</nav><!-- #image-navigation -->
 					</header><!-- .entry-header -->
 
@@ -71,19 +71,19 @@ get_header();
 						</div><!-- .entry-attachment -->
 
 						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'cuteFrames' ), 'after' => '</div>' ) ); ?>
+						<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'cute-frames' ), 'after' => '</div>' ) ); ?>
 
 					</div><!-- .entry-content -->
 
 					<footer class="entry-meta">
 						<?php if ( comments_open() && pings_open() ) : // Comments and trackbacks open ?>
-							<?php printf( __( '<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'cuteFrames' ), get_trackback_url() ); ?>
+							<?php printf( __( '<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'cute-frames' ), get_trackback_url() ); ?>
 						<?php elseif ( ! comments_open() && pings_open() ) : // Only trackbacks open ?>
-							<?php printf( __( 'Comments are closed, but you can leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'cuteFrames' ), get_trackback_url() ); ?>
+							<?php printf( __( 'Comments are closed, but you can leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'cute-frames' ), get_trackback_url() ); ?>
 						<?php elseif ( comments_open() && ! pings_open() ) : // Only comments open ?>
-							<?php _e( 'Trackbacks are closed, but you can <a class="comment-link" href="#respond" title="Post a comment">post a comment</a>.', 'cuteFrames' ); ?>
+							<?php _e( 'Trackbacks are closed, but you can <a class="comment-link" href="#respond" title="Post a comment">post a comment</a>.', 'cute-frames' ); ?>
 						<?php elseif ( ! comments_open() && ! pings_open() ) : // Comments and trackbacks closed ?>
-							<?php _e( 'Both comments and trackbacks are currently closed.', 'cuteFrames' ); ?>
+							<?php _e( 'Both comments and trackbacks are currently closed.', 'cute-frames' ); ?>
 						<?php endif; ?>
 					</footer><!-- .entry-meta -->
 				</article><!-- #post-<?php the_ID(); ?> -->
