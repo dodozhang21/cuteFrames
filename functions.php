@@ -56,6 +56,15 @@ function cuteFrames_setup() {
 		return false;
 	}
 
+	/*
+	 * Let WordPress manage the document title.
+	 * By adding theme support, we declare that this theme does not use a
+	 * hard-coded <title> tag in the document head, and expect WordPress to
+	 * provide it for us.
+	 * @since 2.0.0
+	 */
+	add_theme_support( 'title-tag' );
+	
 	/**
 	 * Add default posts and comments RSS feed links to head
 	 */
@@ -74,13 +83,13 @@ function cuteFrames_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'cuteFrames' ),
+		'primary' => __( 'Primary Menu', 'cute-frames' ),
 	) );
 
 	/**
 	 * Language
 	 */
-	load_theme_textdomain('cuteFrames', get_template_directory() . '/languages');
+	load_theme_textdomain('cute-frames', get_template_directory() . '/languages');
 }
 endif; // cuteFrames_setup
 
@@ -88,7 +97,7 @@ add_action( 'after_setup_theme', 'cuteFrames_setup' );
 
 /* Filter to add author credit to Infinite Scroll footer */
 function cuteFrames_footer_credits( $credit ) {
-	$credit = sprintf( __( '%3$s | Theme: %1$s by %2$s.', 'cuteFrames' ), 'Cute Frames', '<a href="http://regretless.com/" rel="designer">Ying Zhang</a>', '<a href="http://wordpress.org/" title="' . esc_attr( __( 'A Semantic Personal Publishing Platform', 'cuteFrames' ) ) . '" rel="generator">Proudly powered by WordPress</a>' );
+	$credit = sprintf( __( '%3$s | Theme: %1$s by %2$s.', 'cute-frames' ), 'Cute Frames', '<a href="https://regretless.com/" rel="designer">Ying Zhang</a>', '<a href="https://wordpress.org/" title="' . esc_attr( __( 'A Semantic Personal Publishing Platform', 'cute-frames' ) ) . '" rel="generator">Proudly powered by WordPress</a>' );
 	return $credit;
 }
 add_filter( 'infinite_scroll_credit', 'cuteFrames_footer_credits' );
@@ -100,7 +109,7 @@ add_filter( 'infinite_scroll_credit', 'cuteFrames_footer_credits' );
  */
 function cuteFrames_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Sidebar', 'cuteFrames' ),
+		'name' => __( 'Sidebar', 'cute-frames' ),
 		'id' => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
@@ -109,8 +118,8 @@ function cuteFrames_widgets_init() {
 	) );
 	
 	register_sidebar(array(
-		'name' => __('Colophon Widget', 'cuteFrames'),
-		'description' => __('sidebar-colophon.php', 'cuteFrames'),
+		'name' => __('Colophon Widget', 'cute-frames'),
+		'description' => __('Footer widget area', 'cute-frames'),
 		'id' => 'colophon-widget',
 		'before_title' => '<div class="widget-title">',
 		'after_title' => '</div>',
@@ -128,7 +137,7 @@ add_action( 'widgets_init', 'cuteFrames_widgets_init' );
  */
 function cuteFrames_new_excerpt_more($more) {
     global $post;
-	$excerpt_more = sprintf( __( ' <a href="%1$s">Continue reading &#8594;</a>', 'cuteFrames' ), get_permalink($post->ID) );
+	$excerpt_more = sprintf( __( ' <a href="%1$s">Continue reading &#8594;</a>', 'cute-frames' ), get_permalink($post->ID) );
 
 	return $excerpt_more;
 }
@@ -153,7 +162,7 @@ function cuteFrames_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_enqueue_style( 'googleFonts', '//fonts.googleapis.com/css?family=Crafty Girls|Varela|Varela Round|Rokkitt' );
+	wp_enqueue_style( 'googleFonts', '//fonts.googleapis.com/css?family=Crafty Girls|Varela|Varela Round|Rokkitt|Roboto' );
 
 }
 add_action( 'wp_enqueue_scripts', 'cuteFrames_scripts' );
@@ -228,4 +237,3 @@ function cuteFrames_post_image_html( $html, $post_id, $post_image_id ) {
 	return $html;
 }
 add_filter( 'post_thumbnail_html', 'cuteFrames_post_image_html', 10, 3);
-?>

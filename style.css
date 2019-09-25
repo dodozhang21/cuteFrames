@@ -1,13 +1,15 @@
 /*
 Theme Name: Cute Frames
-Theme URI: http://pure-essence.net/2013/03/29/cute-frames/ 
+Theme URI: https://pure-essence.net/2013/03/29/cute-frames/ 
 Author: Ying Zhang
-Author URI: http://regretless.com
+Author URI: https://regretless.com
 Description: Created by <a href="http://pure-essence.net/">pure-essence.net</a>. Cute Frames is a responsive pin board styled theme with unique frames for post formats: aside, image, link, quote and featured images. It supports sidebar, footer widgets, Jetpack infinite scroll.
 Version: 2.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: fixed-width, three-columns, threaded-comments, sticky-post, microformats, right-sidebar, custom-menu, editor-style, full-width-template, post-formats, featured-images, translation-ready
+Tags: three-columns, threaded-comments, sticky-post, microformats, right-sidebar, custom-menu, editor-style, full-width-template,  post-formats, featured-images, translation-ready
+Text Domain: cute-frames
+Domain Path: /languages/
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -842,7 +844,7 @@ img[class*="wp-image-"] {
 .entry-content img,
 img.size-full {
 	max-width: 100%;
-	border
+	
 }
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
@@ -859,6 +861,7 @@ img.header-image,
 img.wp-post-image {
 	/* Add fancy borders to all WordPress-added images but not things like badges and icons and the like */
 	border-radius: 3px;
+        max-width: 93%;
 }
 
 .attachment div.attachment img {
@@ -920,7 +923,7 @@ object {
 #primary .site-navigation {
 	margin: 0;
 	overflow: hidden;
-	font-family: "Crafty Girls", Garamond,Georgia,serif;
+	font-family: "Crafty Girls", Roboto,sans-serif;
 	font-size: 1.2em;
 	background: #D4EFFD;
 	padding: 1em;
@@ -1049,8 +1052,9 @@ body {
 }
 #masthead .site-description {
 	color: #EF415C;
-    font-family: "Crafty Girls",Garamond,Georgia,serif;
+    font-family: "Crafty Girls",Roboto,Georgia,serif;
     font-size: 1.1em;
+    line-height: 2em;
 }
 
 /* Posts */
@@ -1060,6 +1064,7 @@ body {
 	overflow: hidden;
 }
 #primary {
+        margin-top: 30px;
 	border: 0;
 	float: left;
 }
@@ -1152,6 +1157,7 @@ header.entry-header {
 	font-size: 90%;
 	margin-left: 890px;
 	padding-top: 30px;
+        margin-top: 15px;
 }
 #secondary aside {
 	word-wrap: break-word;
@@ -1716,6 +1722,7 @@ table#wp-calendar td#next {
 	}
 
 }
+
 
 /* Text meant only for screen readers. */
 .screen-reader-text {

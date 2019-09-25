@@ -1,13 +1,12 @@
+=== cute-frames ===
+
 Thank you for choosing the Cute Frames Theme.
 
-Version History:
-
-version 1.0.0 – Hello World!
 
 --------------------------------------------------------------------------------
 For support: 
 --------------------------------------------------------------------------------
-visit http://pure-essence.net/2013/03/29/cute-frames/
+visit https://pure-essence.net/2013/03/29/cute-frames/
 
 
 --------------------------------------------------------------------------------
@@ -39,5 +38,14 @@ The resources used in Cute Frames Theme are all GPL-compatible:
 Google web fonts are licensed under open source licenses
 https://developers.google.com/webfonts/faq
 
+== Changelog ==
+= 2.0.0 - Sep. 25. 2019 =
+* Fix textdomain
+* Fix some styling errors
+* Add a second font (Roboto) for non-latin characters
+* WordPress 5.x compatibility
+* Change some http to https
 
+= 1.0.0 =
+* Initial version
 --------------------------------------------------------------------------------

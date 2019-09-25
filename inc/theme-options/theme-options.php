@@ -42,11 +42,11 @@ function cuteFrames_theme_options_init() {
 
 	/* Register our individual settings fields */
 
-	add_settings_field( 'custom_css', __( 'Custom CSS', 'cuteFrames' ), 'cuteFrames_settings_field_custom_css', 'theme_options', 'general' );
+	add_settings_field( 'custom_css', __( 'Custom CSS', 'cute-frames' ), 'cuteFrames_settings_field_custom_css', 'theme_options', 'general' );
 
 	add_settings_field(
 		'support', // Unique identifier for the field for this section
-		__( 'Support cuteFrames', 'cuteFrames' ), // Setting field label
+		__( 'Support cuteFrames', 'cute-frames' ), // Setting field label
 		'cuteFrames_settings_field_support', // Function that renders the settings field
 		'theme_options', // Menu slug, used to uniquely identify the page; see _s_theme_options_add_page()
 		'general' // Settings section. Same as the first argument in the add_settings_section() above
@@ -78,8 +78,8 @@ add_filter( 'option_page_capability_cuteFrames_options', 'cuteFrames_option_page
  */
 function cuteFrames_theme_options_add_page() {
 	$theme_page = add_theme_page(
-		__( 'Theme Options', 'cuteFrames' ),   // Name of page
-		__( 'Theme Options', 'cuteFrames' ),   // Label in menu
+		__( 'Theme Options', 'cute-frames' ),   // Name of page
+		__( 'Theme Options', 'cute-frames' ),   // Label in menu
 		'edit_theme_options',                    // Capability required
 		'theme_options',                         // Menu slug, used to uniquely identify the page
 		'cuteFrames_theme_options_render_page' // Function that renders the options page
@@ -94,7 +94,6 @@ add_action( 'admin_menu', 'cuteFrames_theme_options_add_page' );
 /**
  * Returns the default options for cuteFrames.
  *
-
  */
 function cuteFrames_get_default_theme_options() {
 	$default_theme_options = array(
@@ -108,7 +107,6 @@ function cuteFrames_get_default_theme_options() {
 /**
  * Returns the options array for cuteFrames.
  *
-
  */
 function cuteFrames_get_theme_options() {
 	return get_option( 'cuteFrames_theme_options', cuteFrames_get_default_theme_options() );
@@ -117,7 +115,6 @@ function cuteFrames_get_theme_options() {
 /**
  * Renders the Theme Style setting field.
  *
-
  */
 function cuteFrames_settings_field_theme_style() {
 	$options = cuteFrames_get_theme_options();
@@ -139,13 +136,12 @@ function cuteFrames_settings_field_theme_style() {
 /**
  * Renders the Custom CSS setting field.
  *
-
  */
 function cuteFrames_settings_field_custom_css() {
 	$options = cuteFrames_get_theme_options();
 	?>
 	<textarea class="large-text" type="text" name="cuteFrames_theme_options[custom_css]" id="custom_css" cols="50" rows="10" /><?php echo esc_textarea( $options['custom_css'] ); ?></textarea>
-	<label class="description" for="custom_css"><?php _e( 'Add any custom CSS rules here so they will persist through theme updates.', 'cuteFrames' ); ?></label>
+	<label class="description" for="custom_css"><?php _e( 'Add any custom CSS rules here so they will persist through theme updates.', 'cute-frames' ); ?></label>
 	<?php
 }
 
@@ -161,18 +157,18 @@ function cuteFrames_settings_field_support() {
 	<label>
 		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PUKAB93RNE83S" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="PayPal - The safer, easier way to pay online!" class="alignright"></a>
 
-		<?php _e( 'If you enjoy my themes, please consider making a secure donation using the PayPal button to your right. Anything is appreciated!', 'cuteFrames' ); ?>
+		<?php _e( 'If you enjoy my themes, please consider making a secure donation using the PayPal button to your right. Anything is appreciated!', 'cute-frames' ); ?>
 
 		<br /><input type="checkbox" name="cuteFrames_theme_options[support]" id="support" <?php checked( 'on', $options['support'] ); ?> />
 		<label class="description" for="support">
-			<?php _e( 'No, thank you! Dismiss this message.', 'cuteFrames' ); ?>
+			<?php _e( 'No, thank you! Dismiss this message.', 'cute-frames' ); ?>
 		</label>
 	</label>
 	<?php
 	}
 	else { ?>
 		<label class="description" for="support">
-			<?php _e( 'Hide Donate Button', 'cuteFrames' ); ?>
+			<?php _e( 'Hide Donate Button', 'cute-frames' ); ?>
 		</label>
 		<input type="checkbox" name="cuteFrames_theme_options[support]" id="support" <?php checked( 'on', $options['support'] ); ?> />
 
@@ -186,13 +182,11 @@ function cuteFrames_settings_field_support() {
 /**
  * Returns the options array for cuteFrames.
  *
-
  */
 function cuteFrames_theme_options_render_page() {
 	?>
 	<div class="wrap">
-		<?php screen_icon(); ?>
-		<h2><?php printf( __( '%s Theme Options', 'cuteFrames' ), wp_get_theme() ); ?></h2>
+		<h2><?php printf( __( '%s Theme Options', 'cute-frames' ), wp_get_theme() ); ?></h2>
 		<?php settings_errors(); ?>
 
 		<form method="post" action="options.php">
