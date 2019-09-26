@@ -1,0 +1,396 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuteFrames\n"
+"POT-Creation-Date: 2013-06-03 11:40-0600\n"
+"PO-Revision-Date: 2019-09-26 12:45+0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"Last-Translator: Lena Stergatou <aqua6617@yahoo.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: el\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:16
+msgid "Oops! 404 Not Found"
+msgstr "Ωχ! Σφάλμα 404. Δεν βρέθηκε"
+
+#: 404.php:20
+msgid "Well, this is awkward. Try a search?"
+msgstr "Λοιπόν, αυτό είναι άβολο. Να δοκιμάσουμε μια αναζήτηση;"
+
+#: 404.php:28
+msgid "Categories"
+msgstr "Κατηγορίες"
+
+#: archive.php:22
+#, php-format
+msgid "Category Archives: %s"
+msgstr "Αρχείο κατηγορίας: %s"
+
+#: archive.php:25
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Αρχείο ετικετών: %s"
+
+#: archive.php:32
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Αρχείο συντάκτη: %s"
+
+#: archive.php:40
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Ημερήσια αρχεία: %s"
+
+#: archive.php:43
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Μηνιαία αρχεία: %s"
+
+#: archive.php:46
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Αρχείο έτους: %s"
+
+#: archive.php:49 sidebar.php:17
+msgid "Archives"
+msgstr "Ιστορικό"
+
+#: archive.php:96 search.php:35
+msgid "Nothing Found"
+msgstr "Δε βρέθηκε τίποτα"
+
+#: archive.php:100
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Φαίνεται ότι δεν βρήκαμε αυτό που ζητούσατε. Αν θέλετε, δοκιμάστε την "
+"αναζήτηση."
+
+#: comments.php:16
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Αυτό το άρθρο προστατεύεται με κωδικό. Πληκτρολογήστε τον κωδικό για να "
+"δείτε τυχόν σχόλια."
+
+#: comments.php:39 comments.php:59
+msgid "Comment navigation"
+msgstr "Πλοήγηση σχολίων"
+
+#: comments.php:40 comments.php:60
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Παλιότερα σχόλια"
+
+#: comments.php:41 comments.php:61
+msgid "Newer Comments &raquo;"
+msgstr "Νεότερα Σχόλια &raquo;"
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr "Τα σχόλια δεν επιτρέπονται."
+
+#: content-audio.php:11 content-image.php:11 content-link.php:11
+#: content-quote.php:14 content-status.php:19
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Συνέχεια <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-audio.php:15 content-gallery.php:42 content-image.php:15
+#: content-link.php:15 content-quote.php:18 content-status.php:13
+#, php-format
+msgid "Permalink to %s"
+msgstr "Μόνιμος σύνδεσμος του %s"
+
+#: content-audio.php:20 content-gallery.php:74 content-image.php:20
+#: content-link.php:17 content-quote.php:20 content-status.php:24
+#: content.php:59
+msgid "Leave a comment"
+msgstr "Σχολιάστε"
+
+#: content-audio.php:20 content-gallery.php:74 content-image.php:20
+#: content-link.php:17 content-quote.php:20 content-status.php:24
+#: content.php:59
+msgid "1 Thought"
+msgstr "1 σκέψη"
+
+#: content-audio.php:20 content-gallery.php:74 content-image.php:20
+#: content-link.php:17 content-quote.php:20 content-status.php:24
+#: content.php:59
+msgid "% Thoughts"
+msgstr "% Σκέψεις"
+
+#: content-audio.php:22 content-gallery.php:77 content-image.php:22
+#: content-link.php:19 content-page.php:27 content-quote.php:22
+#: content-single.php:11 content-status.php:26 content.php:62 image.php:20
+msgid "Edit"
+msgstr "Επεξεργασία "
+
+#: content-gallery.php:52 content-gallery.php:62 content-single.php:25
+#: content.php:37 content.php:47
+msgid ", "
+msgstr ", "
+
+#: content-gallery.php:56 content.php:41
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Κατηγορία: %1$s"
+
+#: content-gallery.php:67 content.php:52
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Με ετικέτα %1$s"
+
+#: content-page.php:17
+#, php-format
+msgid ""
+"&laquo; <a href=\"%1$s\" title=\"Parent page: %2$s\">%3$s</a> | Posted on "
+"%4$s"
+msgstr ""
+"« <a href=\"%1$s\" title=\"Γονική σελίδα: %2$s\">%3$s</a> | Δημοσιεύτηκε "
+"στις %4$s"
+
+#: content-page.php:36
+msgid "Subpages"
+msgstr "Υποσελίδες"
+
+#: content-page.php:42 content-single.php:19 content.php:29 image.php:74
+msgid "Pages:"
+msgstr "Σελίδες:"
+
+#: content-single.php:33
+#, php-format
+msgid "This entry was tagged %2$s."
+msgstr "Με ετικέτα %2$s."
+
+#: content-single.php:39
+#, php-format
+msgid "This entry was posted in %1$s and tagged %2$s."
+msgstr "Κατηγορία: %1$s και ετικέτα %2$s."
+
+#: content-single.php:41
+#, php-format
+msgid "This entry was posted in %1$s."
+msgstr "Κατηγορία: %1$s."
+
+#: content.php:28
+msgid "Continue reading <span class=\"meta-nav\">&raquo;</span>"
+msgstr "Συνέχεια <span class=\"meta-nav\">&rarr;</span>"
+
+#: footer.php:18
+#, php-format
+msgid "Proudly powered by %1$s"
+msgstr "Με την υποστήριξη του %1$s"
+
+#: footer.php:19
+#, php-format
+msgid "Theme %1$s by %2$s"
+msgstr "Θέμα:%1$s από %2$s"
+
+#: footer.php:21
+#, php-format
+msgid "%1$s"
+msgstr "%1$s"
+
+#: functions.php:77
+msgid "Primary Menu"
+msgstr "Κύριο μενού"
+
+#: functions.php:91
+#, php-format
+msgid "%3$s | Theme: %1$s by %2$s."
+msgstr "%3$s | Θέμα: %1$s από %2$s."
+
+#: functions.php:91
+msgid "A Semantic Personal Publishing Platform"
+msgstr "Semantic Personal Publishing Platform"
+
+#: functions.php:103
+msgid "Sidebar"
+msgstr "Πλευρική στήλη"
+
+#: functions.php:112
+msgid "Colophon Widget"
+msgstr "Μικροεφαρμογή υποσέλιδου"
+
+#: functions.php:113
+msgid "sidebar-colophon.php"
+msgstr "sidebar-colophon.php"
+
+#: functions.php:131
+#, php-format
+msgid " <a href=\"%1$s\">Continue reading &#8594;</a>"
+msgstr "<a href=\"%1$s\">Συνεχίστε την ανάγνωση &#8594;</a>"
+
+#: image.php:26
+msgid "&larr; Previous"
+msgstr "&larr; Προηγούμενo"
+
+#: image.php:27
+msgid "Next &rarr;"
+msgstr "Επόμενο &rarr;"
+
+#: image.php:80
+#, php-format
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Αφήστε ένα σχόλιο"
+"\">Αφήστε ένα σχόλιο</a> ή αφήστε ένα trackback: <a class=\"trackback-link\" "
+"href=\"%s\" title=\"Διεύθυνση URL Trackback για το άρθρο σας\" rel="
+"\"trackback\">Διεύθυνση URL Trackback</a>."
+
+#: image.php:82
+#, php-format
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+"Τα σχόλια είναι κλειστά αλλά μπορείτε να αφήσετε μια παραπομπή: <a class="
+"\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel="
+"\"trackback\">URL παραπομπής</a>."
+
+#: image.php:84
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+"Τα trackback είναι κλειστά αλλά μπορείτε να <a class=\"comment-link\" href="
+"\"#respond\" title=\"Γράψτε ένα σχόλιο\">αφήσετε ένα σχόλιο</a>."
+
+#: image.php:86
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Τόσο τα σχόλια όσο και τα trackback είναι αυτή τη στιγμή κλειστά."
+
+#: index.php:41
+msgid "No posts to display"
+msgstr "Δεν βρέθηκαν άρθρα"
+
+#: index.php:45
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Έτοιμοι για το πρώτο σας άρθρο; <a href=\"%1$s\">Πάμε</a>."
+
+#: search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Αποτελέσματα αναζήτησης για : %s"
+
+#: search.php:39
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Λυπάμαι, αλλά τίποτα δεν βρέθηκε που ταιριάζει στους όρους αναζήτησης. "
+"Παρακαλώ προσπαθήστε ξανά με άλλες λέξεις κλειδιά."
+
+#: searchform.php:10
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: sidebar.php:24
+msgid "Meta"
+msgstr "Χρήσιμοι σύνδεσμοι"
+
+#: inc/template-tags.php:26
+msgid "Post navigation"
+msgstr "Πλοήγηση άρθρων"
+
+#: inc/template-tags.php:36
+msgid "<span class=\"meta-nav\">&laquo;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Προηγούμενα άρθρα"
+
+#: inc/template-tags.php:40
+msgid "Newer posts <span class=\"meta-nav\">&raquo;</span>"
+msgstr "Επόμενα άρθρα <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:65
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: inc/template-tags.php:65 inc/template-tags.php:88
+msgid "(Edit)"
+msgstr "(Eπεξεργασία)"
+
+#: inc/template-tags.php:75
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "Ο/Η %s <span class=\"says\">λέει:</span>"
+
+#: inc/template-tags.php:78
+msgid "Your comment is awaiting moderation."
+msgstr "Το σχόλιο αναμένει έγκριση."
+
+#: inc/template-tags.php:86
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s στα %2$s"
+
+#: inc/template-tags.php:113
+#, php-format
+msgid ""
+"Posted on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class="
+"\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"byline"
+"\"> by <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" "
+"title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr ""
+"Δημοσιεύθηκε <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class="
+"\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"byline"
+"\"> από τον/την <span class=\"author vcard\"><a class=\"url fn n\" href="
+"\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+
+#: inc/template-tags.php:119
+#, php-format
+msgid "View all posts by %s"
+msgstr "Δείτε όλα τα άρθρα του/της %s"
+
+#: inc/theme-options/theme-options.php:45
+msgid "Custom CSS"
+msgstr "Προσαρμοσμένη CSS"
+
+#: inc/theme-options/theme-options.php:49
+msgid "Support cuteFrames"
+msgstr "Υποστηρίξτε το cuteFrames"
+
+#: inc/theme-options/theme-options.php:81
+#: inc/theme-options/theme-options.php:82
+msgid "Theme Options"
+msgstr "Ρυθμίσεις θέματος"
+
+#: inc/theme-options/theme-options.php:148
+msgid ""
+"Add any custom CSS rules here so they will persist through theme updates."
+msgstr ""
+"Προσθέστε όλους τους προσαρμοσμένους κανόνες CSS εδώ, ώστε να παραμένουν και "
+"μετά από αναβάθμισεις του θέματος."
+
+#: inc/theme-options/theme-options.php:164
+msgid ""
+"If you enjoy my themes, please consider making a secure donation using the "
+"PayPal button to your right. Anything is appreciated!"
+msgstr ""
+"Εάν απολαμβάνετε τα θέματά μου, παρακαλώ εξετάστε το ενδεχόμενο να κάνετε "
+"μια ασφαλή δωρεά χρησιμοποιώντας το κουμπί PayPal στα δεξιά σας. Τα πάντα "
+"εκτιμώνται!"
+
+#: inc/theme-options/theme-options.php:168
+msgid "No, thank you! Dismiss this message."
+msgstr "Όχι, ευχαριστώ! Απόρριψη αυτού του μηνύματος."
+
+#: inc/theme-options/theme-options.php:175
+msgid "Hide Donate Button"
+msgstr "Απόκρυψη κουμπιού δωρεάς"
+
+#: inc/theme-options/theme-options.php:195
+#, php-format
+msgid "%s Theme Options"
+msgstr "Επιλογές θέματος %s"
