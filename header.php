@@ -6,12 +6,13 @@
  *
  * @package cuteFrames
  * @since cuteFrames 1.0.0
+ * @version 2.0 accessibility fixes
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
@@ -24,15 +25,19 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'cuteFrames_before' ); ?>
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header">
 		<hgroup>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<?php 
+		$site_description = get_bloginfo( 'description' );
+		if ( ! empty( trim($site_description ) ) ) : ?>
+			<h2 class="site-description"><?php echo esc_html( $site_description ); ?></h2>
+		<?php endif; ?>
+
 		</hgroup>
-		<div id="search-bar"><?php get_search_form() ?></div>
 	</header><!-- #masthead .site-header -->
 	<div id="nav-menu-wrapper">
-		<nav role="navigation" class="site-navigation main-navigation">
+		<nav class="site-navigation main-navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			<div id="more"></div>
 		</nav>
