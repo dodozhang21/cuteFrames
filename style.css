@@ -4,7 +4,7 @@ Theme URI: https://pure-essence.net/2013/03/29/cute-frames/
 Author: Ying Zhang
 Author URI: https://regretless.com
 Description: Created by <a href="http://pure-essence.net/">pure-essence.net</a>. Cute Frames is a responsive pin board styled theme with unique frames for post formats: aside, image, link, quote and featured images. It supports sidebar, footer widgets, Jetpack infinite scroll.
-Version: 2.0.0
+Version: 3.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: three-columns, threaded-comments, sticky-post, microformats, right-sidebar, custom-menu, editor-style, full-width-template,  post-formats, featured-images, translation-ready
@@ -466,7 +466,7 @@ a:visited {
 .main-navigation .menu > ul > li {
 	line-height: normal;
 	font-size: 90%;
-	z-index: 1;
+/*	z-index: 1;*/
 	float: left;
 	padding: 0;
 	margin: 0;
@@ -1172,10 +1172,7 @@ header.entry-header {
 #secondary aside:nth-of-type(even) {
 	background: url(images/pinkFlower.png) 107% -17px no-repeat rgba(255, 255, 255, 0.7);
 }
-#secondary div,
-#secondary form {
-	padding: 1em;
-}
+#secondary div, #secondary form { padding: 0.5em; }
 #secondary aside td,
 #secondary aside th {
 	padding: 2px;
@@ -1185,8 +1182,8 @@ header.entry-header {
     font-family: "Varela Round",Garamond,Georgia,serif;
     font-size: 1em;
     margin: 0;
-    padding: .5em 0.5em 0;
-	font-weight: bold;
+	padding: 7px;
+    font-weight: bold;
 	line-height: 1em;
 }
 #secondary img {
@@ -1371,7 +1368,6 @@ ol.commentlist > li.comment > ul.children {
 .comment-author {
 	width: 150px;
 	float: left;
-	background: url("images/whiteBorder.png") no-repeat right 20px;
 	margin-right: 20px;
 	min-height: 80px;
 	padding: 20px 20px 0 0;
