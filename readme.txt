@@ -39,6 +39,9 @@ Google web fonts are licensed under open source licenses
 https://developers.google.com/webfonts/faq
 
 == Changelog ==
+= 3.0.0 - Feb. 13. 2026 =
+* Accessibility fixes
+
 = 2.0.0 - Sep. 25. 2019 =
 * Fix textdomain
 * Fix some styling errors
